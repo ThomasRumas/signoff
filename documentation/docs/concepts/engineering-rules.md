@@ -68,4 +68,4 @@ The plugin adds a short index of the installed stacks to every session and regis
 
 Architecture and engineering documents carry a **status**. Agents treat it as meaningful: a proposed recommendation is not turned into a mandatory rule, and an accepted decision is not silently overridden.
 
-Browse the [rules catalogue](/rules/) of the bundled stacks, [install them](../guides/install-rules), or [write your own](../guides/write-your-own-rules).
+Browse the [rules catalogue](../rules/) of the bundled stacks, [install them](../guides/install-rules), or [write your own](../guides/write-your-own-rules).

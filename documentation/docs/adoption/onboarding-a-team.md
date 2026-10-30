@@ -35,5 +35,5 @@ Use the `documentation` agent to write the architecture overview, the main decis
 - Rerun `/ocr-rules` after changing checks or updating the plugin.
 
 ::: tip
-The same rules that onboard your agents onboard your next human teammate. Point new developers to the [rules catalogue](/rules/) on their first day.
+The same rules that onboard your agents onboard your next human teammate. Point new developers to the [rules catalogue](../rules/) on their first day.
 :::

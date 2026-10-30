@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { withBase } from "vitepress"
 import { data as stacks } from "../../rules.data"
 import TerminalDemo from "../TerminalDemo.vue"
 import DotMatrix from "./DotMatrix.vue"
@@ -122,7 +123,7 @@ const faq = [
       <p class="sub">AI writes the code. You keep the decisions. An OpenCode plugin that puts your approval, your criteria and your team's engineering rules on every change.</p>
       <div class="actions">
         <a class="btn primary" href="#quick-start">Install the plugin</a>
-        <a class="btn" href="/getting-started/why">Why it matters</a>
+        <a class="btn" :href="withBase('/getting-started/why')">Why it matters</a>
       </div>
       <TitleBlock class="hero-block" />
     </section>
@@ -151,7 +152,7 @@ const faq = [
           </ol>
           <TerminalDemo />
         </div>
-        <p class="center"><a class="link" href="/getting-started/installation">Full installation guide</a></p>
+        <p class="center"><a class="link" :href="withBase('/getting-started/installation')">Full installation guide</a></p>
       </div>
     </section>
 
@@ -221,7 +222,7 @@ const faq = [
           <p>{{ step.text }}</p>
         </li>
       </ol>
-      <p class="center"><a class="link" href="/concepts/workflow">How the workflow runs</a></p>
+      <p class="center"><a class="link" :href="withBase('/concepts/workflow')">How the workflow runs</a></p>
     </section>
 
     <section id="job" class="ch dark">
@@ -235,7 +236,7 @@ const faq = [
           <h3>{{ duty.title }}</h3>
           <p class="agent">{{ duty.agent }}</p>
           <p>{{ duty.text }}</p>
-          <a class="link" :href="duty.link">{{ duty.linkText }}</a>
+          <a class="link" :href="withBase(duty.link)">{{ duty.linkText }}</a>
         </div>
       </div>
     </section>
@@ -288,7 +289,7 @@ const faq = [
       <p class="counts">
         Shipped with <strong>{{ checks.nestjs }}</strong> NestJS checks, <strong>{{ checks.vue }}</strong> Vue checks and
         <strong>{{ documents }}</strong> rules and decisions from years of production work.
-        <a class="link" href="/rules/">Browse the rules</a>
+        <a class="link" :href="withBase('/rules/')">Browse the rules</a>
       </p>
     </section>
 
@@ -346,8 +347,8 @@ const faq = [
       <h2>Sign off on every change.</h2>
       <p class="sub">Let the agents write. Keep the decisions.</p>
       <div class="actions">
-        <a class="btn primary" href="/getting-started/installation">Install the plugin</a>
-        <a class="btn" href="/getting-started/introduction">Read the documentation</a>
+        <a class="btn primary" :href="withBase('/getting-started/installation')">Install the plugin</a>
+        <a class="btn" :href="withBase('/getting-started/introduction')">Read the documentation</a>
       </div>
     </section>
 

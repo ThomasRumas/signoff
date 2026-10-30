@@ -68,6 +68,6 @@ Check the [FAQ](../faq), or read [why it matters](./why) for the reasoning behin
 
 [**Read the guide**<br>Understand the workflow, the approvals, and the memory step by step.](../concepts/workflow)
 
-[**Browse the rules**<br>Explore the NestJS and Vue checks and decisions you can install, or write your own.](/rules/)
+[**Browse the rules**<br>Explore the NestJS and Vue checks and decisions you can install, or write your own.](../rules/)
 
 </div>

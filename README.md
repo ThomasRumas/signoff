@@ -371,9 +371,9 @@ To publish manually, for example to recover from a failed release, run
 
 ### One-time repository setup
 
-- Add an Actions secret named `NPM_TOKEN` with publish access to
-  `@thomasrumas/signoff`. A granular npm token with read and write access to the
-  package is enough.
+- Configure a trusted publisher for `@thomasrumas/signoff` on npmjs.com:
+  GitHub Actions, repository `ThomasRumas/signoff`, workflow `release.yml`, with
+  `npm publish` allowed. Publishing uses OIDC and needs no `NPM_TOKEN` secret.
 - Protect `main` and require the `CI` workflow checks before merging.
 - If `main` is protected, allow GitHub Actions to push the release commit, or
   remove `@semantic-release/git` from `release.config.mjs` and keep versions
