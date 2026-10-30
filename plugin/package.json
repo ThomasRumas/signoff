@@ -1,6 +1,6 @@
 {
   "name": "@thomasrumas/signoff",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Signoff: developer-led OpenCode agents, team engineering rules, and tooled code review. You own what ships.",
   "license": "MIT",
   "type": "module",
