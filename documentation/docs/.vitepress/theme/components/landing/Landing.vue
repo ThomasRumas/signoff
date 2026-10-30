@@ -141,7 +141,7 @@ const faq = [
             <li>
               <h3>Restart OpenCode and prepare the project</h3>
               <pre><code>/codegraph-init
-/ocr-rules</code></pre>
+/rules-install</code></pre>
               <p>Both optional: index the code, install the review rules.</p>
             </li>
             <li>
