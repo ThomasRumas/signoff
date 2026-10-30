@@ -1,0 +1,48 @@
+{
+  "name": "@thomasrumas/signoff",
+  "version": "0.0.0",
+  "description": "Signoff: developer-led OpenCode agents, team engineering rules, and tooled code review. You own what ships.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "rules",
+    "skills",
+    "agents"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasRumas/signoff.git",
+    "directory": "plugin"
+  },
+  "homepage": "https://thomasrumas.github.io/signoff/",
+  "bugs": {
+    "url": "https://github.com/ThomasRumas/signoff/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "rules:check": "node scripts/rules.ts",
+    "skills:vendor": "node scripts/vendor-skills.ts"
+  },
+  "dependencies": {
+    "@alibaba-group/open-code-review": "^1.13.3",
+    "@colbymchenry/codegraph": "^1.6.2",
+    "@dietrichgebert/ponytail": "5.3.2",
+    "@opencode/plugin": "^2.1.1",
+    "picomatch": "^4.0.7",
+    "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/picomatch": "^4.0.3",
+    "typescript": "^5.6.0"
+  }
+}
