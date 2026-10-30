@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/alibaba/open-code-review",
+  "ref": "375f64cd6f67a48a135da83cfcf59c52669a09cb",
+  "path": "skills/open-code-review-delegate",
+  "license": "Apache-2.0"
+}

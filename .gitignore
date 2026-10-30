@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+.agents/
+
+documentation/docs/.vitepress/dist/
+documentation/docs/.vitepress/cache/
+documentation/docs/rules/*/
