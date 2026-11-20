@@ -10,6 +10,7 @@ These pages are generated at build time from the plugin's `rules/` directory. Th
 | --- | --- | --- |
 | NestJS | `@nestjs/core` | [NestJS API best practices](./nestjs/README) |
 | Vue | `vue` | [Frontend best practices](./vue/README) |
+| FastAPI | — (all projects) | [FastAPI best practices](./fastapi/README) |
 
 ## How to read them
 

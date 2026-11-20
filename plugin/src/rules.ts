@@ -310,10 +310,11 @@ export interface OcrRule {
   merge_system_rule?: boolean
 }
 
+/** OCR reads rule.json from the repository root, so sources need their installed stack path. */
 export function buildOcrRules(stack: RuleStack, root = ""): OcrRule[] {
   return stack.checks.map((check) => ({
     path: prefixGlob(check.globs.length === 1 ? check.globs[0] : `{${check.globs.join(",")}}`, root),
-    rule: `[${stack.reviewMarker}] ${check.title}\n${check.body}\nSources: ${check.sources.join(", ")}`,
+    rule: `[${stack.reviewMarker}] ${check.title}\n${check.body}\nSources: ${check.sources.map((source) => `.opencode/rules/${stack.id}/${source}`).join(", ")}`,
     merge_system_rule: true,
   }))
 }

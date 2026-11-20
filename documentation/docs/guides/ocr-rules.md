@@ -28,6 +28,7 @@ Globs are prefixed with each stack's application directory, so stacks in differe
 
 - Existing entries, `include`, and `exclude` are kept and stay first, so **project rules keep priority**.
 - Team entries are identified by their `[<review-marker>]` prefix and **replaced on each run**.
+- `Sources:` paths point to the installed files under `.opencode/rules/<stack>/`, relative to the repository root.
 - Entries set `merge_system_rule: true` to keep OCR's built-in language rules.
 
 ::: tip

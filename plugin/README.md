@@ -31,7 +31,7 @@ register its skills and agents.
 
 - `orchestrator`, `delivery`, `refactor`, `reviewer`, and `documentation`
   agents.
-- Opt-in engineering rules for NestJS and Vue, installed with `/rules-install`.
+- Opt-in engineering rules for NestJS, Vue, and FastAPI, installed with `/rules-install`.
 - Bundled Open Code Review (`ocr`) and CodeGraph (`codegraph`) CLIs.
 - The `author-engineering-rules` skill and the `docs-*` skills.
 - Vendored skills including `open-code-review-delegate`, `grill-me`,

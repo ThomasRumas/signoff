@@ -85,11 +85,14 @@ test("builds OCR entries with the review marker and application root", async () 
   const [first] = buildOcrRules(nestjs, "apps/api")
   assert.equal(first.path, "apps/api/**/main.ts")
   assert.match(first.rule, /^\[nestjs-best-practices\] Application entrypoint/)
+  assert.match(first.rule, /Sources: \.opencode\/rules\/nestjs\/architecture\/001-/)
+  assert.doesNotMatch(first.rule, /\nSources: architecture\//)
   assert.equal(first.merge_system_rule, true)
 
   const vue = stacks.find((stack) => stack.id === "vue")!
   const store = buildOcrRules(vue, "apps/web").find((entry) => entry.rule.includes("Shared store"))
   assert.equal(store?.path, "{apps/web/**/stores/**/*.{ts,js},apps/web/**/*.store.{ts,js}}")
+  assert.match(store?.rule ?? "", /Sources: \.opencode\/rules\/vue\//)
 })
 
 test("merges OCR rules after project entries and replaces previous team entries", async () => {

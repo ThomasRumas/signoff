@@ -50,7 +50,7 @@ Ask which applies:
 3. **Extend a bundled stack that is not installed**: either install it first (the user runs `/rules-install`), or create a separate project stack that holds only the new rules.
 4. **Checks only**: go to step 6.
 
-If the user only wants the plugin's NestJS or Vue rules as they are, do not author anything: point them to `/rules-install`.
+If the user only wants the plugin's NestJS, Vue, or FastAPI rules as they are, do not author anything: point them to `/rules-install`.
 
 ### 1. Stack identity (new stack only)
 

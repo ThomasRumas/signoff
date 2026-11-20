@@ -16,7 +16,7 @@ No rules are active until you add them to the project. You choose:
 
 | Way | How | Use it when |
 | --- | --- | --- |
-| **Install the plugin's rules** | [`/rules-install`](../guides/install-rules) copies a bundled stack (NestJS, Vue) into `.opencode/rules/`. | Your stack is covered and you want a solid starting point. |
+| **Install the plugin's rules** | [`/rules-install`](../guides/install-rules) copies a bundled stack (NestJS, Vue, FastAPI) into `.opencode/rules/`. | Your stack is covered and you want a solid starting point. |
 | **Write your own** | The `author-engineering-rules` skill [interviews you and writes the rules](../guides/write-your-own-rules). | Your stack or conventions are not covered, or you already have standards to formalize. |
 
 You can combine both: install a stack, then add your own decisions or a project-wide stack. Either way, the result is plain Markdown in your repository that you [customize](../guides/customize-rules), review in pull requests, and version like code.

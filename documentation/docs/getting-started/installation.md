@@ -63,7 +63,7 @@ In each project, you can:
 
 ```sh
 /codegraph-init   # build the CodeGraph index
-/rules-install    # install the plugin's NestJS or Vue rules in .opencode/rules/
+/rules-install    # install the plugin's NestJS, Vue, or FastAPI rules in .opencode/rules/
 /ocr-rules        # install the installed rules for code review
 ```
 

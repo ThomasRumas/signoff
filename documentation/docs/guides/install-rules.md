@@ -1,6 +1,6 @@
 # Install the plugin's rules
 
-The plugin ships engineering rules for NestJS and Vue as a catalogue. They are **not active until you install them**: you choose which stacks your project adopts, and they become files in your repository that you own.
+The plugin ships engineering rules for NestJS, Vue, and FastAPI as a catalogue. They are **not active until you install them**: you choose which stacks your project adopts, and they become files in your repository that you own.
 
 ## Install
 
@@ -29,7 +29,7 @@ You can also ask in plain language: "install the NestJS rules from the plugin in
 
 ## After installing
 
-- Agents receive the stack's checks for the files they touch, through [`rules_for`](../reference/tools#rules-for). A stack is applied only to files whose nearest `package.json` declares one of its `detect` dependencies.
+- Agents receive the stack's checks for the files they touch, through [`rules_for`](../reference/tools#rules-for). A stack with `detect` applies only to files whose nearest `package.json` declares one of its dependencies; a stack without `detect` (such as FastAPI) is matched by its globs in every project.
 - Commit `.opencode/rules/` so the whole team, and CI, share the same rules.
 - Run [`/ocr-rules`](./ocr-rules) so the code review applies the same checks.
 - Edit the files freely: they are your copies. See [Customize the rules](./customize-rules).

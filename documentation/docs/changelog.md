@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Engineering rules for FastAPI backends, opt-in with `/rules-install`.
+- OCR rules now list source files under `.opencode/rules/<stack>/` instead of stack-relative paths.
+
 ## 1.0.0
 
 - Developer-led workflow: `orchestrator`, `delivery`, and `refactor` agents.

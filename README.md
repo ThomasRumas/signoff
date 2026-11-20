@@ -59,8 +59,9 @@ under `plugin/rules/<stack>/`; a project uses rules only once they are under
 Two ways to get rules into a project:
 
 - **Install the bundled rules.** `/rules-install` lists the stacks (NestJS,
-  Vue), previews the files, and copies the selected ones after confirmation.
-  Existing files that differ are kept unless you confirm `overwrite`.
+  Vue, FastAPI), previews the files, and copies the selected ones after
+  confirmation. Existing files that differ are kept unless you confirm
+  `overwrite`.
 - **Write your own.** Ask an agent to use the `author-engineering-rules`
   skill: it interviews you theme by theme, collects examples and references,
   and writes a stack under `.opencode/rules/`. The `rules_check` tool validates
@@ -68,10 +69,11 @@ Two ways to get rules into a project:
 
 The plugin adds a short index of the installed stacks to every session and
 registers a `rules_for` tool. Given the files an agent plans to change or
-review, it returns, for each stack whose `detect` dependencies appear in the
-nearest `package.json`, the first check whose `globs` match, plus the cookbook
-sources to read. Delivery and Refactor call it; Delivery records the applied
-check IDs in the spec's `## Rules` section.
+review, it returns the first check whose `globs` match for each applicable
+stack: a stack with `detect` applies when those dependencies appear in the
+nearest `package.json`; a stack without `detect` is considered for every file.
+It also returns the cookbook sources to read. Delivery and Refactor call it;
+Delivery records the applied check IDs in the spec's `## Rules` section.
 
 Installed files are the project's own: edit them, add a stack (for example
 `.opencode/rules/project/checks/`), and commit them. A stack without `detect`

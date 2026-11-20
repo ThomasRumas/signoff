@@ -14,7 +14,7 @@ The skill is bundled with the plugin, so it is available in every project.
 
 ## What happens
 
-1. **Mode.** New stack, extension of an installed stack, or checks only. If you only want the bundled NestJS or Vue rules as they are, it points you to [`/rules-install`](./install-rules).
+1. **Mode.** New stack, extension of an installed stack, or checks only. If you only want the bundled NestJS, Vue, or FastAPI rules as they are, it points you to [`/rules-install`](./install-rules).
 2. **Stack identity.** Folder name, description, `detect` dependencies, and review marker.
 3. **Themes, one at a time.** Architecture, Code Patterns, Libraries, Testing, plus any theme you add. For each one it asks questions and collects evidence: a good example, a bad example, documentation links, internal documents, and accepted exceptions.
 4. **File plan, drafts, approval.** It proposes the files, shows each draft, and writes only what you approve.

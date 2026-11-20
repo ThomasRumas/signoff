@@ -17,7 +17,7 @@ You get file-by-file coverage, findings ranked by severity, and a fix plan appli
 Start here if the code works but doesn't look like your team's code.
 
 1. Get rules into the project, one of two ways:
-   - run `/rules-install` to install the bundled NestJS or Vue rules, or
+   - run `/rules-install` to install the bundled NestJS, Vue, or FastAPI rules, or
    - ask the agent to use the `author-engineering-rules` skill to write rules for your own stack and conventions.
 2. Run `/ocr-rules` so the review uses the same checks.
 3. Edit or add rules in `.opencode/rules/` as the team agrees on them.
